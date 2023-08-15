@@ -1,0 +1,428 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar {
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+.navbar :hover{
+    color: rgb(13, 0, 255);
+}
+
+.navbar.scrolling-active {
+    background-color:#000000cb;
+    padding: 5px 0 5px 0;
+}
+
+.navbar a {
+    font-weight: 500;
+}
+
+.navbar-nav a:hover{
+    color: rgba(0, 13, 255);
+}
+
+/* .navbar i {
+    color: white;
+} */
+
+.navbar .logo img {
+    width: fit-content;
+    height: 60px;
+    display: flex;
+}
+/* Navbar */
+
+/* Login */
+.no-underline {
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.body-formlogin {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/assets/img/bg.png); /* Ganti dengan URL gambar background yang diinginkan */
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.container-form {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container-form a {
+    color: #0d6efd;
+}
+
+.container-form a:hover {
+    color: #0b5ed7;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-form h2 {
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 200px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #0d6efd;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0b5ed7;
+}
+/* Login */
+
+/* Sign up */
+.body-formsignup {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.background-signup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/assets/img/bg.png); /* Ganti dengan URL gambar background yang diinginkan */
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+.signup-form i {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container-signup {
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.container-signup a {
+    color: #0d6efd;
+}
+
+.container-signup a:hover {
+    color: #0b5ed7;
+}
+
+.container-signup h1 {
+    text-align: center;
+}
+
+.container-signup form {
+    margin-top: 20px;
+}
+
+.container-signup label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.container-signup input[type="text"],
+.container-signup input[type="email"],
+.container-signup input[type="password"],
+.container-signup input[type="konfirmasi-password"],
+.container-signup textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.container-signup input[type="radio"] {
+    margin-right: 5px;
+}
+
+.container-signup input[type="submit"] {
+    background-color: #0d6efd;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.container-signup input[type="submit"]:hover {
+    background-color: #0b5ed7;
+}
+/* Sign up */
+
+/* Header */
+.header {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/assets/img/bg.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.header h1 {
+    color :white;
+    --animate-delay: 1.7s;
+    line-height: 1.5;
+}
+
+.header p {
+    color :white;
+    --animate-delay: 1.7s;
+}
+/* Header */
+
+.visi-misi {
+    padding: 80px 0 40px 0;
+}
+
+.visi-misi p, ol {
+    text-align: justify;
+}
+.visi-misi img {
+    width: 500px;
+    height: fit-content;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+@media screen and (max-width: 475px) {
+    .visi-misi img {
+        width: 350px;
+        height: fit-content;
+    }
+}
+
+/* Kelembagaan */
+.kelembagaan {
+    padding: 40px 0 40px 0;
+}
+
+.kelembagaan img {
+    width: 500px;
+    height: fit-content;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+@media screen and (max-width: 475px) {
+    .kelembagaan img {
+        width: 350px;
+        height: fit-content;
+    }
+}
+/* Kelembagaan */
+
+/* Lokasi Desa */
+.lokasi-desa {
+    padding: 40px 0 40px 0;
+}
+
+.lokasi-desa p {
+    text-align: justify;
+}
+
+.lokasi-desa img {
+    width: 500px;
+    height: fit-content;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+@media screen and (max-width: 475px) {
+    .lokasi-desa img {
+        width: 350px;
+        height: fit-content;
+    }
+}
+
+.lokasi-desa iframe {
+    width: 500px;
+    height: 400px;
+}
+
+@media screen and (max-width: 475px) {
+    .lokasi-desa iframe {
+        width: 350px;
+        height: 200px;
+    }
+}
+/* Lokasi Desa */
+
+/* Demografi Desa */
+.demografi-desa {
+    padding: 40px 0 40px 0;
+}
+
+.demografi-desa p {
+    text-align: justify;
+}
+
+.demografi-desa img {
+    width: 500px;
+    height: fit-content;
+}
+
+@media screen and (max-width: 475px) {
+    .demografi-desa img {
+        width: 350px;
+        height: fit-content;
+    }
+}
+/* Demografi Desa */
+
+/* Keadaan Sosial */
+.keadaan-sosial {
+    padding: 40px 0 40px 0;
+}
+
+.keadaan-sosial p {
+    text-align: justify;
+}
+
+.keadaan-sosial img {
+    width: 500px;
+    height: fit-content;
+}
+
+@media screen and (max-width: 475px) {
+    .keadaan-sosial img {
+        width: 350px;
+        height: fit-content;
+    }
+}
+/* Keadaan Sosial */
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 24px 82px;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-media img {
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+    }
+}
+/* .footer {
+    padding-top: 40px;
+    background:#000000cb;
+    color: #fff;
+    border-top-left-radius: 150px;
+    border-top-right-radius: 150px;
+}
+
+.footer i img{
+    width: fit-content;
+    height: 100px;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    margin-bottom: 30px;
+}
+
+.footer .col a{
+    color: #ffffff9a;
+}
+
+.footer .col a:hover{
+    color: #fff;
+}
+
+@media screen and (max-width: 475px) {
+    .footer{
+    border-top-left-radius: 70px;
+    border-top-right-radius: 70px;
+    }
+
+    .footer i img{
+    width: fit-content;
+    height: 75px;
+    }
+} */
+/* Footer */
