@@ -42,11 +42,20 @@
             <input type="date" id="tanggal_lahir" name="tanggal_lahir" required>
             <br>
             <br>
-            <label for="jenis_kelamin">Jenis Kelamin:</label>
+            <!-- <label for="jenis_kelamin">Jenis Kelamin:</label>
             <input type="radio" id="laki_laki" name="jenis_kelamin" value="Laki-laki" required>
             <label for="laki_laki">Laki-laki</label>
             <input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan" required>
-            <label for="perempuan">Perempuan</label>
+            <label for="perempuan">Perempuan</label> -->
+            <label for="jenis_kelamin">Jenis Kelamin:</label>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">Laki-laki</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                <label class="form-check-label" for="flexRadioDefault2">Perempuan</label>
+            </div>
             <br>
             <label for="pekerjaan">Pekerjaan:</label>
             <input type="text" id="pekerjaan" name="pekerjaan" placeholder="Masukan Pekerjaan Anda" required>
