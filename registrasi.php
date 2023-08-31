@@ -23,7 +23,7 @@
             <input type="password2" name="password2" id="password2">
         </li>
         <li>
-            <button></button>
+            <button type="submit" name="register">Register!</button>
         </li>
     </form>
 </body>
