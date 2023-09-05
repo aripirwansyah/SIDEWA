@@ -14,19 +14,19 @@
 
     function registrasi($data) {
         global $conn;
-
-        // $nik = strtolower(stripcslashes($data["nik"]));
-        // $namalengkap = strtolower(stripcslashes($data["namalengkap"]));
-        // $jeniskelamin = strtolower(stripcslashes($data["jeniskelamin"]));
-        // $tempatlahir = strtolower(stripcslashes($data["tempatlahir"]));
-        // $tanggallahir = strtolower(stripcslashes($data["tanggallahir"]));
-        // $alamat = strtolower(stripcslashes($data["alamat"]));
+        
+        $nik = $data["nik-ktp"];
+        $namalengkap = $data["namalengkap"];
+        $jeniskelamin = $data["jeniskelamin"];
+        $tempatlahir = $data["tempatlahir"];
+        $tanggallahir = $data["tanggallahir"];
+        @$alamat = $data["alamat"];
         $username = strtolower(stripcslashes($data["username"]));
         $password = mysqli_real_escape_string($conn, $data["password"]);
         $password2 = mysqli_real_escape_string($conn, $data["password2"]);
 
         // cek usernama sudah ada atau belum
-        $result = mysqli_query($conn, "SELECT username FROM usertest WHERE username = '$username'");
+        $result = mysqli_query($conn, "SELECT username FROM user WHERE username = '$username'");
 
         // cek konfirmasi password
         if( $password !== $password2 ) {
@@ -47,7 +47,8 @@
         $password = password_hash($password, PASSWORD_DEFAULT);
 
         // tambahkan userbaru ke database
-        mysqli_query($conn, "INSERT INTO usertest VALUES('', '$username', '$password')");
+        mysqli_query($conn, "INSERT INTO user VALUES('', '$nik', '$namalengkap', '$jeniskelamin', '$tempatlahir', '$tanggallahir', 
+        '$alamat', '$username', '$password', $password2)");
 
         return mysqli_affected_rows($conn);
     }
