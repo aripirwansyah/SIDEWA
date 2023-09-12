@@ -17,7 +17,7 @@
         
         $nik = $data["nik-ktp"];
         $namalengkap = $data["namalengkap"];
-        $jeniskelamin = $data["jeniskelamin"];
+        @$jeniskelamin = $data["jeniskelamin"];
         $tempatlahir = $data["tempatlahir"];
         $tanggallahir = $data["tanggallahir"];
         @$alamat = $data["alamat"];
@@ -25,7 +25,7 @@
         $password = mysqli_real_escape_string($conn, $data["password"]);
         $password2 = mysqli_real_escape_string($conn, $data["password2"]);
 
-        // cek usernama sudah ada atau belum
+        // cek username sudah ada atau belum
         $result = mysqli_query($conn, "SELECT username FROM user WHERE username = '$username'");
 
         // cek konfirmasi password
@@ -48,7 +48,7 @@
 
         // tambahkan userbaru ke database
         mysqli_query($conn, "INSERT INTO user VALUES('', '$nik', '$namalengkap', '$jeniskelamin', '$tempatlahir', '$tanggallahir', 
-        '$alamat', '$username', '$password', $password2)");
+        '$alamat', '$username', '$password')");
 
         return mysqli_affected_rows($conn);
     }

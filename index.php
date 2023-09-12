@@ -5,11 +5,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Sistem Informasi Desa Wanakerta</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="/SIDEWA-WEB/styles/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 
-    <link rel="shortcut icon" href="assets/icon.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="../SIDEWA-WEB/assets/icon.svg" type="image/x-icon">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,7 +23,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
         <div class="container">
-            <a href="/index.html" class="logo"><img src="assets/logo2.svg"></a>
+            <a href="/index.php" class="logo"><img src="assets/logo2.svg"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -63,9 +63,9 @@
                     </li>
                 </ul>
                 <div class="d-grid gap-1 d-md-flex justify-content-md-end text-center">
-                    <a href="/page/loginpage.html"><button class="btn btn-outline-primary me-md-2"
+                    <a href="../SIDEWA-WEB/page/login.php"><button class="btn btn-outline-primary me-md-2"
                             type="button">Masuk</button></a>
-                    <a href="/page/signuppage.html"><button class="btn btn-primary" type="button">Daftar</button></a>
+                    <a href="../SIDEWA-WEB/page/daftarakun.php" class="btn btn-primary" type="button">Daftar</button></a>
                 </div>
             </div>
     </nav>
@@ -455,11 +455,12 @@
         <div class="footer-content">
             <div class="social-media">
                 <!-- Ganti link di bawah dengan link sosial media Anda -->
-                <a href="https://youtube.com" target="_blank"><img src="/assets/youtube-fill.svg" alt="Youtube"></a>
+                <a href="https://youtube.com" target="_blank"><img
+                        src="../SIDEWA-WEB/assets/youtube-fill.svg" alt="Youtube"></i></a>
                 <a href="https://web.facebook.com/wanakerta.wanakerta.5" target="_blank"><img
-                        src="/assets/facebook-fill.svg" alt="Facebook"></a>
-                <a href="https://instagram.com" target="_blank"><img src="/assets/instagram-line.svg"
-                        alt="Instagram"></a>
+                        src="../SIDEWA-WEB/assets/facebook-fill.svg" alt="Facebook"></a>
+                <a href="https://instagram.com" target="_blank"><img 
+                        src="../SIDEWA-WEB/assets/instagram-line.svg" alt="Instagram"></a>
             </div>
             <div class="copyright">
                 &copy; Desa Wanakerta 2023. Hak Cipta Dilindungi.

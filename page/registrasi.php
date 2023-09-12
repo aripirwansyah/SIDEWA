@@ -1,5 +1,4 @@
 <?php
-
     require 'function.php';
 
     if (isset($_POST["register"])){
@@ -24,6 +23,9 @@
     <style>
         label {
             display: block;
+        }
+        li {
+            list-style: none;
         }
     </style>
 </head>
@@ -54,7 +56,7 @@
             </li>
             <li>
                 <label for="tanggallahir">Tanggal Lahir: </label>
-                <input type="text" name="tanggallahir" id="tanggallahir" placeholder="Masukan Tanggal Lahir Anda">
+                <input type="date" name="tanggallahir" id="tanggallahir" placeholder="Masukan Tanggal Lahir Anda">
             </li>
             <li>
                 <label for="alamat">Alamat: </label>
