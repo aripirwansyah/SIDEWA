@@ -1,3 +1,9 @@
+<?php
+
+    session_start();
+
+?>
+
 <!doctype html>
 <html>
 
@@ -55,18 +61,25 @@
                             Layanan Masyarakat
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Pembuatan SKU</a></li>
+                            <li><a class="dropdown-item" href="../SIDEWA-WEB/page/pembuatan-sku.php">Pembuatan SKU</a></li>
                             <li><a class="dropdown-item" href="#">Pembuatan KTP</a></li>
                             <li><a class="dropdown-item" href="#">Pembuatan KK</a></li>
                             <li><a class="dropdown-item" href="#">Pengaduan Masyarakat</a></li>
                         </ul>
                     </li>
                 </ul>
-                <div class="d-grid gap-1 d-md-flex justify-content-md-end text-center">
+                <!-- <div class="d-grid gap-1 d-md-flex justify-content-md-end text-center">
                     <a href="../SIDEWA-WEB/page/login.php"><button class="btn btn-outline-primary me-md-2"
                             type="button">Masuk</button></a>
                     <a href="../SIDEWA-WEB/page/daftarakun.php" class="btn btn-primary" type="button">Daftar</button></a>
-                </div>
+                </div> -->
+                <?php if(!isset($_SESSION['login']) || $_SESSION['login'] == ""){?>
+                    <a href="../SIDEWA-WEB/page/login.php"><button class="btn btn-outline-primary me-md-2"
+                            type="button">Masuk</button></a>
+                    <a href="../SIDEWA-WEB/page/daftarakun.php" class="btn btn-primary" type="button">Daftar</button></a>
+                <?php }else{ ?>
+                    <a href="../SIDEWA-WEB/page/logout.php" class="btn btn-danger">Keluar</i></a>
+                <?php } ?>
             </div>
     </nav>
     <!-- Navbar -->
